@@ -21,7 +21,7 @@ class MainApp {
         } else {
             this.number = avatarNumber;
             if (this.number == 0) {
-                this.avatarUrl = document.getElementById('1').src;
+                this.avatarUrl = document.querySelectorAll('img')[0].src;
             } else {
                 this.avatarUrl = `./img/av-${this.number}.webp`;
             }
